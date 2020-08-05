@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a35fe4a1-aa9a-4dc0-96c1-eb6e77130f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/select.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/channels.go" beforeDir="false" afterPath="$PROJECT_DIR$/channels.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/channels.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutines.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/select.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singleton.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wait_groups.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,38 +95,38 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="912" height="356" key="GridCell.Tab.0.bottom" timestamp="1596620993498">
+    <state width="912" height="356" key="GridCell.Tab.0.bottom" timestamp="1596626528022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993498" />
-    <state width="912" height="356" key="GridCell.Tab.0.center" timestamp="1596620993498">
+    <state width="912" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528022" />
+    <state width="912" height="356" key="GridCell.Tab.0.center" timestamp="1596626528022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993498" />
-    <state width="912" height="356" key="GridCell.Tab.0.left" timestamp="1596620993498">
+    <state width="912" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528022" />
+    <state width="912" height="356" key="GridCell.Tab.0.left" timestamp="1596626528021">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993498" />
-    <state width="912" height="356" key="GridCell.Tab.0.right" timestamp="1596620993498">
+    <state width="912" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528021" />
+    <state width="912" height="356" key="GridCell.Tab.0.right" timestamp="1596626528022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993498" />
-    <state width="912" height="356" key="GridCell.Tab.1.bottom" timestamp="1596620993378">
+    <state width="912" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528022" />
+    <state width="912" height="356" key="GridCell.Tab.1.bottom" timestamp="1596626528024">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993378" />
-    <state width="912" height="356" key="GridCell.Tab.1.center" timestamp="1596620993378">
+    <state width="912" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528024" />
+    <state width="912" height="356" key="GridCell.Tab.1.center" timestamp="1596626528023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993378" />
-    <state width="912" height="356" key="GridCell.Tab.1.left" timestamp="1596620993378">
+    <state width="912" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528023" />
+    <state width="912" height="356" key="GridCell.Tab.1.left" timestamp="1596626528022">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993378" />
-    <state width="912" height="356" key="GridCell.Tab.1.right" timestamp="1596620993378">
+    <state width="912" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528022" />
+    <state width="912" height="356" key="GridCell.Tab.1.right" timestamp="1596626528023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="912" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596620993378" />
+    <state width="912" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1596626528023" />
     <state x="922" y="188" key="SettingsEditor" timestamp="1596531409280">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -129,36 +135,5 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="601" y="265" width="700" height="530" key="recent.locations.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1596531100335" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/mutexes.go</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/mutexes.go</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/select.go</url>
-          <line>26</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/select.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/select.go</url>
-          <line>40</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
