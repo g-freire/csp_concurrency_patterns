@@ -64,12 +64,31 @@ func BufferedChannel(){
 	time.Sleep(3 * time.Second)
 	message := <-channel
 	fmt.Println(message)
-
 }
+
+// DIRECTIONAL CHANNELS
+// When we use channels as parameters we restrict their directionality
+// so that hey can be used only to send or to receive (static type check)
+
+func DirectionalChannel(){
+	channel := make(chan string, 1)
+
+	// constraint of only input channel
+	// go func(ch <- chan string){  // uncomment to see the type error
+	go func(ch chan <- string){
+		ch <- "Hello"
+		println("Finishing goroutine")
+	}(channel)
+	time.Sleep(time.Second)
+	msg := <- channel
+	fmt.Println(msg)
+}
+
 
 
 func main(){
 	//UnbufferedChannel()
-	UnbufferedChannel2()
+	//UnbufferedChannel2()
 	//BufferedChannel()
+	DirectionalChannel()
 }
