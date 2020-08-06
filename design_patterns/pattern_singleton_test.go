@@ -9,7 +9,7 @@ import (
 
 // SINGLETON PATTERN USING CHANNELS AND MUTEXES
 
-// go test -v singleton_test.go
+// go test -v pattern_singleton_test.go
 
 func TestSingletonUnit(t *testing.T) {
 	singleton := GetInstance()
