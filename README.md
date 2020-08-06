@@ -17,5 +17,5 @@ CSP, on the other side, introduces a new entity into the equation-channels. Chan
 way to communicate between processes because they are completely anonymous. 
 This abstraction does not tell us how many processes are on each side of the channel.
 
-We will use Golang to implement the CSP concurrency model strategies, since the language was
-design with this model influence.
+We will use Golang to implement the CSP concurrency model strategies, since the Go language was
+design influenced by the CSP model.
