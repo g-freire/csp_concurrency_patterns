@@ -79,7 +79,7 @@ func (s *MaybeString) Execute(f ExecuteStringFunc) *MaybeString {
 }
 
 
-// util function to prevent deadlock - aka waiting forever
+// util function to prevent deadlock exception - aka waiting forever for the not implemented callback
 func timeout(t *testing.T, wg *sync.WaitGroup) {
 	time.Sleep(time.Second)
 	t.Log("Timeout!")

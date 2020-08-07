@@ -19,3 +19,5 @@ This abstraction does not tell us how many processes are on each side of the cha
 
 We will use Golang to implement the CSP concurrency model strategies, since the Go language was
 design influenced by the CSP model.
+
+Reference: https://www.oreilly.com/library/view/go-design-patterns/9781788390552/
