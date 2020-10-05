@@ -92,3 +92,20 @@ func main(){
 	//BufferedChannel()
 	DirectionalChannel()
 }
+
+//////////////////////////////////////////////
+//  SUMMARY
+//////////////////////////////////////////////
+//  create a channel with make command
+//  ex. make(chan int)
+
+//  go func <-chan  sending channel
+//  go func chan<-  receiving channel
+
+// send-only :  chan <- val int
+// receive-only : val int <- chan
+
+// sender side block untill receiver is available
+// block receiver till msg is available
+// can decouple sender and receiver with buffered channels
+// good for asymetric send/receive load (ex. burst data from sensors)
