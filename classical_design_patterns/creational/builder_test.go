@@ -1,4 +1,4 @@
-package main
+package creational
 
 import (
 	"fmt"
@@ -143,8 +143,4 @@ func TestBuilderPattern(t *testing.T) {
 			motorbike.Structure)
 	}
 
-}
-
-func main() {
-	fmt.Print("OK")
 }
