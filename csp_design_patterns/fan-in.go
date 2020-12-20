@@ -9,7 +9,7 @@ func produce(p Producer) {
 	var i int64 = 0
 	for {
 		msg := Msg{Id: p.Id, Counter: i}
-		p.Channel <- msg
+		p.inputChannel <- msg
 		i++
 		time.Sleep(p.Delay)
 	}
@@ -29,14 +29,14 @@ type Msg struct {
 
 type Producer struct {
 	Id      string
-	Channel chan Msg
+	inputChannel chan Msg
 	Delay   time.Duration
 }
 
 func main() {
 	inputChannel := make(chan Msg)
-	p1 := Producer{Id: "A", Delay: 100 * time.Millisecond, Channel: inputChannel}
-	p2 := Producer{Id: "B", Delay: 250 * time.Millisecond, Channel: inputChannel}
+	p1 := Producer{Id: "A", Delay: 100 * time.Millisecond, inputChannel: inputChannel}
+	p2 := Producer{Id: "B", Delay: 250 * time.Millisecond, inputChannel: inputChannel}
 	go produce(p1)
 	go produce(p2)
 
