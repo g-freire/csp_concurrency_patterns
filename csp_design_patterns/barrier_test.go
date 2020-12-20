@@ -1,4 +1,4 @@
-//package barrier
+// package barrier
 
 package main
 
